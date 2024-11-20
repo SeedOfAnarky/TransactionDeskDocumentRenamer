@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Transactions Desk Address Modifier",
+  "version": "1.0",
+  "description": "Fetches the address from Transactions Desk and renames forms.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": [
+    "https://pr.transactiondesk.com/transaction/detail/*/forms"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://pr.transactiondesk.com/transaction/detail/*/forms"],
+      "js": ["content.js"]
+    }
+  ]
+}

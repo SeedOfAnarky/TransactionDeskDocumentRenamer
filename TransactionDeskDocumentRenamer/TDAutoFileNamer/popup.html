@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        #fetch-address {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border: none;
+            background: #1a73e8;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #address-display {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Address Fetcher</h3>
+    <button id="fetch-address">
+        <span class="material-symbols-outlined">location_on</span>
+        Get Address
+    </button>
+    <div id="address-display"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
